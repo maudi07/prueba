@@ -19,6 +19,28 @@
       .wrapper{
         position: relative;
         transform:skewY(-14deg);
+      }
+      .wrapper li, button{
+        position: relative;
+        list-style:none;
+        width:200px;
+        z-index: var(--i);
+        transition:0.3s;
+        color:white;
+      }
+      .wrapper li::before, button::before{
+        position:absolute;
+        content:'';
+        background:#6d74e3;
+        top:0;
+        left:-40px;
+        width:40px;
+        height:40px;
+        transform-origin:right;
+        transform:skewY(45seg);
+        transition:0.3s;
+      }
+      .wrapper li::after, button::after{
         
       }
     </style>
